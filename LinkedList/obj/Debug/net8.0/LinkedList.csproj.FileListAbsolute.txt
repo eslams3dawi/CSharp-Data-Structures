@@ -1,0 +1,14 @@
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\bin\Debug\net8.0\LinkedList.exe
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\bin\Debug\net8.0\LinkedList.deps.json
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\bin\Debug\net8.0\LinkedList.runtimeconfig.json
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\bin\Debug\net8.0\LinkedList.dll
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\bin\Debug\net8.0\LinkedList.pdb
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\obj\Debug\net8.0\LinkedList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\obj\Debug\net8.0\LinkedList.AssemblyInfoInputs.cache
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\obj\Debug\net8.0\LinkedList.AssemblyInfo.cs
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\obj\Debug\net8.0\LinkedList.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\obj\Debug\net8.0\LinkedList.dll
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\obj\Debug\net8.0\refint\LinkedList.dll
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\obj\Debug\net8.0\LinkedList.pdb
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\obj\Debug\net8.0\LinkedList.genruntimeconfig.cache
+C:\Users\dell\Desktop\Courses\BackEnd\DEPI\Technical\C#\Projects\LinkedList\obj\Debug\net8.0\ref\LinkedList.dll
