@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-
 namespace Stack__Array
 {
     class Stack

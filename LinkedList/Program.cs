@@ -1,4 +1,4 @@
-﻿//tail != null // will exit from linkedlist _ used when traversing
+﻿//tail != null // will exit from LinkedList _ used when traversing
 //tail.Next != null // reach tail 
 //PreviousOfTail.Next.Next != null
 
@@ -35,13 +35,12 @@ namespace LinkedList
                 Head = NewNode;
             }
         }
-
         public void InsertLast(object Element)
         {
             Node NewNode = new Node(Element);
             if (Head == null)
                 Head = NewNode;
-            else // 5 6 7 → 5 6 7 → 8
+            else 
             {
                 Node Tail = Head;
                 while(Tail.Next != null)
@@ -52,7 +51,6 @@ namespace LinkedList
                 Tail = NewNode;
             }
         }
-
         public void InsertAtPosition(object PositionValue, object Element)
         {
             Node NewNode = new Node(Element);
@@ -64,8 +62,7 @@ namespace LinkedList
             {
                 InsertFirst(Element);
             }
-            else // 5 6 7 → 5 6 8 7 
-                //  0 1 2 → 0 1 2 3        
+            else 
             {
                 Node PreviousOfTargetPosition = Head;
                 while(PreviousOfTargetPosition != null && PreviousOfTargetPosition.Next.Data != PositionValue)
@@ -76,20 +73,18 @@ namespace LinkedList
                 PreviousOfTargetPosition.Next = NewNode;
             }
         }
-
         public void DeleteFirst()
         {
             if (Head == null)
                 Console.WriteLine("Linked list is already empty");
-            else // 5 6 1
+            else 
             {
                 Node DeletedTemp = Head;
                 Head = Head.Next;
                 DeletedTemp.Next = null;
             }
         }
-
-        public void DeleteLast() // 5 6 7 8
+        public void DeleteLast() 
         {
             if (Head == null)
                 Console.WriteLine("Linked list is already empty");
@@ -103,7 +98,6 @@ namespace LinkedList
                 PreviousOfTail.Next = null;
             }
         }
-
         public void DeleteAtPosition(object WantedValue)
         {
             if (Head == null)
@@ -128,10 +122,8 @@ namespace LinkedList
                     PreviousOfDeleted.Next = DeletedValue.Next;
                     DeletedValue.Next = null;
                 }
-
             }
         }
-
         public bool Search(object TargetElement)
         {
             if (Head == null)
@@ -148,7 +140,6 @@ namespace LinkedList
             }
                 return false;
         }
-
         public void Traverse()
         {
             if (Head == null)
@@ -171,13 +162,13 @@ namespace LinkedList
             LinkedList ListOne = new LinkedList();
             ListOne.InsertFirst(10);
             ListOne.InsertFirst("Eslam");
-            //ListOne.InsertAtPosition(10, 50);
-            //ListOne.InsertLast(70);
-            //ListOne.DeleteLast();
-            //ListOne.DeleteAtPosition(10);
-            //Console.WriteLine(ListOne.Search(10));//false
-            //Console.WriteLine(ListOne.Search(50));//true
-            //ListOne.DeleteFirst();
+            ListOne.InsertAtPosition(10, 50);
+            ListOne.InsertLast(70);
+            ListOne.DeleteLast();
+            ListOne.DeleteAtPosition(10);
+            Console.WriteLine(ListOne.Search(10));//false
+            Console.WriteLine(ListOne.Search(50));//true
+            ListOne.DeleteFirst();
             ListOne.Traverse();
         }
     }

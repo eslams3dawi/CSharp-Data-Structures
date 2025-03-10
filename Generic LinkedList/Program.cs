@@ -1,8 +1,4 @@
-﻿//tail != null // will exit from linkedlist _ used when traversing
-//tail.Next != null // reach tail 
-//PreviousOfTail.Next.Next != null
-
-namespace LinkedList
+﻿namespace LinkedList
 {
     class LinkedList<T>
     {
@@ -23,7 +19,6 @@ namespace LinkedList
         {
             Head = null;
         }
-
         public void InsertFirst(T Element)
         {
             Node NewNode = new Node(Element);
@@ -35,13 +30,12 @@ namespace LinkedList
                 Head = NewNode;
             }
         }
-
         public void InsertLast(T Element)
         {
             Node NewNode = new Node(Element);
             if (Head == null)
                 Head = NewNode;
-            else // 5 6 7 → 5 6 7 → 8
+            else 
             {
                 Node Tail = Head;
                 while (Tail.Next != null)
@@ -52,7 +46,6 @@ namespace LinkedList
                 Tail = NewNode;
             }
         }
-
         public void InsertAtPosition(T PositionValue, T Element)
         {
             Node NewNode = new Node(Element);
@@ -64,9 +57,7 @@ namespace LinkedList
             {
                 InsertFirst(Element);
             }
-            else // 5 6 7 → 5 6 8 7 
-                 //  0 1 2 → 0 1 2 3        
-            {
+            else             {
                 Node PreviousOfTargetPosition = Head;
                 while (PreviousOfTargetPosition != null && PreviousOfTargetPosition.Next.Data!.Equals(PositionValue))
                 {
@@ -76,20 +67,18 @@ namespace LinkedList
                 PreviousOfTargetPosition.Next = NewNode;
             }
         }
-
         public void DeleteFirst()
         {
             if (Head == null)
                 Console.WriteLine("Linked list is already empty");
-            else // 5 6 1
+            else
             {
                 Node DeletedTemp = Head;
                 Head = Head.Next;
                 DeletedTemp.Next = null;
             }
         }
-
-        public void DeleteLast() // 5 6 7 8
+        public void DeleteLast() 
         {
             if (Head == null)
                 Console.WriteLine("Linked list is already empty");
@@ -103,7 +92,6 @@ namespace LinkedList
                 PreviousOfTail.Next = null;
             }
         }
-
         public void DeleteAtPosition(T WantedValue)
         {
             if (Head == null)
@@ -119,7 +107,7 @@ namespace LinkedList
                 else
                 {
                     Node PreviousOfDeleted = Head;
-                    Node DeletedValue = Head.Next; // 50 10
+                    Node DeletedValue = Head.Next; 
                     while (DeletedValue != null && !DeletedValue.Data.Equals(WantedValue))
                     {
                         PreviousOfDeleted = DeletedValue;
@@ -128,10 +116,8 @@ namespace LinkedList
                     PreviousOfDeleted.Next = DeletedValue.Next;
                     DeletedValue.Next = null;
                 }
-
             }
         }
-
         public bool Search(T TargetElement)
         {
             if (Head == null)
@@ -148,7 +134,6 @@ namespace LinkedList
             }
             return false;
         }
-
         public void Traverse()
         {
             if (Head == null)
@@ -172,11 +157,11 @@ namespace LinkedList
             ListOne.InsertFirst(10);
             ListOne.InsertAtPosition(10, 50);
             ListOne.InsertLast(70);
-            ListOne.DeleteLast(); // 50 10 
-            //ListOne.DeleteAtPosition(10);
-            //Console.WriteLine(ListOne.Search(10));//false
-            //Console.WriteLine(ListOne.Search(50));//true
-            //ListOne.DeleteFirst();
+            ListOne.DeleteLast();
+            ListOne.DeleteAtPosition(10);
+            Console.WriteLine(ListOne.Search(10));
+            Console.WriteLine(ListOne.Search(50));
+            ListOne.DeleteFirst();
             ListOne.Traverse();
         }
     }
